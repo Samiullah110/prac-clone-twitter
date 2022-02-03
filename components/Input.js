@@ -82,7 +82,7 @@ const addEmoji = (e) => {
 
   return <div className={`border-b border-[#e6ecf0] p-3 flex space-x-3 
   overflow-y-scroll ${loading && "opacity-60"}`}>
-      <img src='https://lh3.googleusercontent.com/a-/AOh14Gjw4DwoLM2R8y6rC3EvS_HQ8TvAxGFicf4TSHLm=s288-p-rw-no'
+      <img src={session.user.image}
       className='h-11 w-11 rounded-full cursor-pointer'
       alt=''/>
 
