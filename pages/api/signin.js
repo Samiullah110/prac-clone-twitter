@@ -16,19 +16,19 @@ function SignIn() {
 
     return (
       <>
-    <div className="flex flex-col items-center space-y-20 pt-48">
-      <Image
-        src="https://rb.gy/ogau5a"
-        width={150}
-        height={150}
-        objectFit="contain"
+    <div className="flex flex-col items-center space-y-10 pt-48">
+    
+    
+    <img className=' rounded-full w-40 bg-[#1d9bf0] object-contain ' src='https://rb.gy/ogau5a' alt=""
+    
       />
-
+       <p className="relative  border-inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all text-black ">Twitter SignUp</p>
       
+   
       {providers &&
         Object.values(providers).map((provider) => (
           <div key={provider.name}>
-            <button  className="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-[#1d9bf0] rounded hover:bg-[#1d9bf0] group"
+            <button  className="relative  border-inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all text-white bg-[#1d9bf0]  hover:bg-[#1d9bf0] group  rounded-full "
               onClick={() => {
                 SignIntoProvider(provider.id, {callbackUrl:'/'});
               }}
@@ -37,6 +37,8 @@ function SignIn() {
             </button>
           </div>
         ))}
+       
+        
     </div>
 
       </>
