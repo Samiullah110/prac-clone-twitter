@@ -100,7 +100,7 @@ const likePost= async () =>{
                                <Moment fromNow>{post?.timestamp?.toDate()}</Moment>
                            </span>
                            {!postPage && (
-                               <p className='text-[#d9d9d9] text-[15-px] 
+                               <p className='text-[#141313] text-[15-px] 
                                sm:text-base  mt-0.5'>{post?.text}
                                </p>
                            )}

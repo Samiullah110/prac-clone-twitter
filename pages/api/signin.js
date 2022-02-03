@@ -16,7 +16,7 @@ function SignIn() {
 
     return (
       <>
-   <div className="flex flex-col items-center space-y-20 pt-48">
+    <div className="flex flex-col items-center space-y-20 pt-48">
       <Image
         src="https://rb.gy/ogau5a"
         width={150}
@@ -28,7 +28,7 @@ function SignIn() {
       {providers &&
         Object.values(providers).map((provider) => (
           <div key={provider.name}>
-            <button
+            <button  className="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-[#1d9bf0] rounded hover:bg-[#1d9bf0] group"
               onClick={() => {
                 SignIntoProvider(provider.id);
               }}

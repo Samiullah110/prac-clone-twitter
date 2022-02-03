@@ -38,7 +38,7 @@ function Sidebar() {
         <SidebarLink text="Profile" Icon={UserIcon} />
         <SidebarLink text="More" Icon={DotsCircleHorizontalIcon} />
        </div>
-       <button className='hidden xl:inline ml-auto bg-[#1d9bf0] text-black
+       <button className='hidden xl:inline ml-auto bg-[#1d9bf0] text-white
          rounded-full w-56 h-[52px] text-lg font-bold'>
            Tweet
            </button>
